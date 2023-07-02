@@ -1,0 +1,22 @@
+
+.move-enter .move-appear{
+  opacity: 0;
+}
+.move-enter-active .move-appear-active{
+  opacity: 1;
+  transition: opacity 1s ease-in; 
+}
+.move-enter-done{
+  opacity: 1;
+}
+/* 出场动画 */
+.move-exit{
+  opacity: 1;
+}
+.move-exit-active{
+  opacity: 0;
+  transition: opacity 1s ease-in; 
+}
+.move-exit-done{
+  opacity: 0;
+}

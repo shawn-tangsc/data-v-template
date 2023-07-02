@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-gradient {
+    background: linear-gradient(hsl(0, 0%, 0%) 0%,
+    hsla(0, 0%, 0%, 0.738) 19%,
+    hsla(0, 0%, 0%, 0.541) 34%,
+    hsla(0, 0%, 0%, 0.382) 47%,
+    hsla(0, 0%, 0%, 0.278) 56.5%,
+    hsla(0, 0%, 0%, 0.194) 65%,
+    hsla(0, 0%, 0%, 0.126) 73%,
+    hsla(0, 0%, 0%, 0.075) 80.2%,
+    hsla(0, 0%, 0%, 0.042) 86.1%,
+    hsla(0, 0%, 0%, 0.021) 91%,
+    hsla(0, 0%, 0%, 0.008) 95.2%,
+    hsla(0, 0%, 0%, 0.002) 98.2%,
+    hsla(0, 0%, 0%, 0) 100%);
+    opacity: 0.5;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: none;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 4px #000000;
+    margin-top: -2px;
+}
+
+.edit-space-modal {
+    height: 100vh;
+    pointer-events: auto;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(22px);
+    display: flex;
+    flex-direction: column;
+}
+
+.filepond--credits {
+    display: none;
+}
+
+.filepond--root.filepond--hopper {
+    margin-bottom: 0;
+}
+
+.filepond--drop-label {
+    cursor: pointer;
+}
+
+.filepond--drop-label.filepond--drop-label label {
+    color: #444;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.filepond--drop-label.filepond--drop-label label .filepond--label-action {
+    text-decoration: none;
+}
+
+.filepond--panel-root {
+    background: none !important;
+}
+
+.simplebar-content-wrapper {
+    outline: none !important;
+}
+
+.list-container {
+    height: calc(100vh - 696px);
+    width: 606px;
+}
+
+.modal-layout {
+    top: 0;
+    right: 0px;
+}
+
+.my__swiper {
+    width: 100%;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    --swiper-navigation-color: #fff;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 17px;/* 设置按钮大小 */
+}
+
+.my__swiper .swiper-wrapper {
+    align-items: center;
+}
+.my__swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my__swiper .swiper-slide-prev,
+.my__swiper .swiper-slide-next {
+    height: 105px;
+}
+.my__swiper .swiper-slide-active {
+    height: 135px;
+}
+.my__swiper .swiper-slide-active img {
+    width: 135px;
+    height: 135px;
+}
+.my__swiper .swiper-slide-prev img,
+.my__swiper .swiper-slide-next img {
+    opacity: 0.6;
+}
+.my__swiper .swiper-button-prev {
+    left: 0;
+}
+.my__swiper .swiper-button-next {
+    right: 0;
+}
+@media only screen and (max-width: 768px) {
+    .edit-space-modal {
+        height: 100vh;
+        max-width: calc(100vw - 64px);
+        width: calc(100vw - 64px);
+        background-color: rgba(255, 255, 255, 0.8);
+        pointer-events: auto;
+    }
+
+    .modal-layout {
+        top: 0;
+        right: 0;
+    }
+
+    .list-container {
+        max-height: calc(100vh - 210px);
+        width: '100%';
+    }
+}
+.move-enter .move-appear{
+  opacity: 0;
+}
+.move-enter-active .move-appear-active{
+  opacity: 1;
+  transition: opacity 1s ease-in; 
+}
+.move-enter-done{
+  opacity: 1;
+}
+/* 出场动画 */
+.move-exit{
+  opacity: 1;
+}
+.move-exit-active{
+  opacity: 0;
+  transition: opacity 1s ease-in; 
+}
+.move-exit-done{
+  opacity: 0;
+}

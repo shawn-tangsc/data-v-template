@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "lib": ["dom", "es5", "es6", "es7", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+//    "strict": true,
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es2015",
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "downlevelIteration": true,
+    "paths": { // 这个可以让你在import的时候使用@不会报红
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "types": [
+      "node",
+      "webpack-env"
+    ]
+  },
+  "include": ["**/*.d.ts","src"],
+  "exclude": [
+    "./node_modules/*",
+    "lib",
+    "es"
+  ]
+}

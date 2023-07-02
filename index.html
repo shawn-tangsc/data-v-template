@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <style>
+      body {
+        margin: 0;
+        background-color: black !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" style="width: 100%; height: 100%; overflow: scroll"></div>
+  </body>
+  <script>
+    if ('navigator' in window && 'gpu' in navigator) {
+      console.log('WebGPU is supported in this browser')
+    } else {
+      console.log('WebGPU is not supported in this browser')
+    }
+  </script>
+</html>
